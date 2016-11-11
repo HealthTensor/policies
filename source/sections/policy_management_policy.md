@@ -16,9 +16,9 @@ HealthTensor implements policies and procedures to maintain compliance and integ
 1. All policies are stored and up to date to maintain HealthTensor compliance with HIPAA, HITRUST, NIST, and other relevant standards. Updates and version control is done similar to source code control.
 2. Policy update requests can be made by any workforce member at any time. Furthermore, all policies are reviewed annually by both the Security and Privacy Officer to assure accurate and up-to-date.
 3. Edits and updates made by appropriate and authorized workforce members are done on their own versions, or branches. These changes are only merged back into final, or master, versions by the Privacy or Security Officer, similarly to a pull request. All changes are linked to workforce personnel who made them and the Officer who accepted them.
-4. All policies are made accessible to all HealthTensor workforce members. The current master policies are published [here](https://healthtensor.com/policy/).
-	* Changes can be requested to policies using this [form](https://docs.google.com/a/catalyze.io/forms/d/1sJ_8DcbbW8i2i85pqXU7JrjHLFYBhFj_TP5uAG4QFZE/viewform).
-	* Once the change has been approved to a HealthTensor Policy we implement the policy change using Salt. The process for that is spelled out in the HealthTensor Configuration Management Policy.
+4. All policies are made accessible to all HealthTensor workforce members. The current master policies are published [here](http://policies.healthtensor.com).
+	* Changes can be requested to policies via [GitHub](https://github.com/HealthTensor/policies).
+	* Once the change has been approved to a HealthTensor Policy we implement the policy change using Ansible. The process for that is spelled out in the HealthTensor Configuration Management Policy.
 	* Changes are automatically communicated to all HealthTensor team members through integrations between Github and Slack that log all Github policy channels to a dedicated HealthTensor Slack Channel.
 5. All policies, and associated documentation, are retained for 6 years from the date of its creation or the date when it last was in effect, whichever is later
 	1. Version history of all HealthTensor policies is done via Github.

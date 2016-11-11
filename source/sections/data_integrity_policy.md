@@ -12,7 +12,7 @@ HealthTensor takes data integrity very seriously. As stewards and partners of He
 
 ## Data integrity Policy
 
-Production Systems that create, receive, store, or transmit customer data (hereafter "Production Systems") must follow the following guidelines.
+Production Systems that create, receive, store, or transmit customer ePHI (hereafter "Production Systems") must follow the following guidelines.
 
 ### Disabling non-essential services
 
