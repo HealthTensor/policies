@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+HOST=healthtensorwww
+TARGET="~/policies/"
+
+rsync -r build/ $HOST:$TARGET
