@@ -30,11 +30,8 @@ The training covers the following topics:
 
 * * *
 
-We are in the business of providing compliant infrastructure to our customers
-so that they do not have to worry about the nuances of devOps and scaling and
-managing infrastructure - all they have to worry about is their application -
-its capabilities and its security and their own internal policies. We take
-care of everything else.
+We are in the business of structuring health data from patient records, EHRs,
+clinical notes, etc.
 
 So why is HIPAA training important? The rationale is best explained by this
 quote from Cory Doctorow -
@@ -374,11 +371,6 @@ for most organizations wanting to be compliant, and covers documenting
 architecture, identifying risks related to the protection of PHI, and
 mitigating those risks.
 
-When you use HealthTensor, we cover much of risk environment for you as we manage
-many aspects of the architecture. We work with you to define areas that you
-need to address in terms of risk, and will work closely with you if and when
-you decide to go forward with a full audit.
-
 There are other areas in this category including workforce security,
 contingency planning, training, and a few others, all of which are necessary
 to examine and address, but the risk assessment is really the big one in this
@@ -397,8 +389,7 @@ Areas people sometimes neglect are office security and workstation security.
 These aren’t hard safeguards to meet but they likely involve some process
 changes, like not allowing cleaning people into your office without
 supervision, keeping doors locked and tracking visitors, encrypting employee
-computers, and using workstation firewalls. We control and monitor access at
-our offices using both keys and uniquely-assigned fobs.
+computers, and using workstation firewalls.
 
 ## Technical
 
@@ -1006,39 +997,34 @@ business associate agreement with covered entities. That's actually a very
 common use case for us at HealthTensor, where most of our early customers are
 business associates, and their customers are covered entities.
 
-We spent a lot of time and a lot of money with our attorneys on our BAAs
-because this is a new area, an area we don't think is well defined yet; we
-don't think the existing BAA templates are adequate or even make sense for
-most hosted vendors. In this new paradigm of health technology there are
-interesting definitions around which entities are responsible, both
-technically and financially in the case of a breach, for different aspects of
-the HIPAA rules. We tell our prospective customers to read their current
-business associate agreements that they have with their hosting providers or
-other services companies to get a sense of what the legal responsibility is
-for the business associate, and the aspects to which the subcontractor is
-ultimately responsible. Regardless of who is issuing the BAA, you should read
-through it in detail, because at some point a compliance or security officer
-likely will read it and you want to be as proactive about compliance issues as
-you can.
+In this new paradigm of health technology there are interesting definitions
+around which entities are responsible, both technically and financially in the
+case of a breach, for different aspects of the HIPAA rules. We tell our
+prospective customers to read their current business associate agreements that
+they have with their hosting providers or other services companies to get a
+sense of what the legal responsibility is for the business associate, and the
+aspects to which the subcontractor is ultimately responsible. Regardless of who
+is issuing the BAA, you should read through it in detail, because at some point
+a compliance or security officer likely will read it and you want to be as
+proactive about compliance issues as you can.
 
 If you boil it down, business associate agreements are just contracts that
-outline the ways in which different organizations are going to handle
-electronic protected health information (ePHI), the types of responsibilities
-that those organizations take on, some of the very specific rules around their
-obligations with regards to HIPAA. This last one, the obligations of
-subcontractors, is an area in which you want to pay close attention.
-Specifically read what the subcontractor's obligations are in terms of
-timeliness of breach notification, because that was a part of the changes in
-the HIPAA Omnibus Rule that just went into effect. We have had several early
-customers come to us because the time period for breach notifications with
-their existing hosting provider is not acceptable for covered entities they
-are selling to. We've talked to several companies that have run into
-roadblocks with enterprises because their business associate agreements with
-their hosting providers had been out of line, and especially relating to
-breach notification. Our policy at HealthTensor is breach notification within 4
-hours, along with some very detailed
-[plans](https://policies.healthtensor.com/#breach-policy) to help you mitigate the
-risk of a breach.
+outline the ways in which different organizations are going to handle electronic
+protected health information (ePHI), the types of responsibilities that those
+organizations take on, some of the very specific rules around their obligations
+with regards to HIPAA. This last one, the obligations of subcontractors, is an
+area in which you want to pay close attention. Specifically read what the
+subcontractor's obligations are in terms of timeliness of breach notification,
+because that was a part of the changes in the HIPAA Omnibus Rule that just went
+into effect. We have had several early customers come to us because the time
+period for breach notifications with their existing hosting provider is not
+acceptable for covered entities they are selling to. We've talked to several
+companies that have run into roadblocks with enterprises because their business
+associate agreements with their hosting providers had been out of line, and
+especially relating to breach notification. Our policy at HealthTensor is breach
+notification within 5 days, along with some very
+detailed [plans](https://policies.healthtensor.com/#breach-policy) to help you
+mitigate the risk of a breach.
 
 At a high level, that's what business associate agreements are, and you are
 expected to have those for all of the various technology and services companies
