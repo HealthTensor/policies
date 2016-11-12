@@ -38,19 +38,18 @@ It is the policy of HealthTensor to safeguard the confidentiality, integrity, an
 	* Assign the task of reviewing the audit reports to the workforce member responsible for the application, system, or network, the Privacy Officer, or any other individual determined to be appropriate for the task;
 	* Organize and provide oversight to a team structure charged with audit compliance activities (e.g., parameters, frequency, sample sizes, report formats, evaluation, follow-up, etc.).
 	* All connections to HealthTensor are monitored. Access is limited to certain services, ports, and destinations. Exceptions to these rules, if created, are reviewed on an annual basis. 
-2. HealthTensor’s auditing processes shall address access and activity at the following levels listed below. In the case of PaaS Customers, Application and User level auditing is the responsibility of the Customer; HealthTensor provides software to aggregate and view User and Application logs, but the log data collected is the responsibility of the PaaS Customer. Auditing processes may address date and time of each log-on attempt, date and time of each log-off attempt, devices used, functions performed, etc.
+2. HealthTensor’s auditing processes shall address access and activity at the following levels listed below. In the case of Customers, Application and User level auditing is the responsibility of the Customer. Auditing processes may address date and time of each log-on attempt, date and time of each log-off attempt, devices used, functions performed, etc.
 	* User: User level audit trails generally monitor and log all commands directly initiated by the user, all identification and authentication attempts, and data and services accessed.
 	* Application: Application level audit trails generally monitor and log all user activities, including data accessed and modified and specific actions.
 	* System: System level audit trails generally monitor and log user activities, applications accessed, and other system defined specific actions. HealthTensor utilizes file system monitoring from OSSEC to assure the integrity of file system data.
 	* Network: Network level audit trails generally monitor information on what is operating, penetrations, and vulnerabilities.
 3. HealthTensor shall log all incoming and outgoing traffic to into and out of its environment. This includes all successful and failed attempts at data access and editing. Data associated with this data will include origin, destination, time, and other relevant details that are available to HealthTensor.
-4. HealthTensor utilizes OSSEC to scan all systems for malicious and unauthorized software every 2 hours and at reboot of systems. Alerts from OSSEC are sent to Kibana, the centralized logging service that we use.
+4. HealthTensor utilizes OSSEC to scan all systems for malicious and unauthorized software every day.
 5. HealthTensor leverages process monitoring tools throughout its environment.
-6. HealthTensor treats its Developer Portal as a Platform Add-on and, as such, it logs all activity associated with Developer Portal Access.
-7. HealthTensor uses OSSEC to monitor the integrity of log files by utilizing OSSEC System Integrity Checking capabilities.
-8. HealthTensor shall identify “trigger events” or criteria that raise awareness of questionable conditions of viewing of confidential information. The “events” may be applied to the entire HealthTensor Platform or may be specific to a Customer, partner, business associate, Platform Add-on or application (See Listing of Potential Trigger Events below).
+6. HealthTensor uses OSSEC to monitor the integrity of log files by utilizing OSSEC System Integrity Checking capabilities.
+8. HealthTensor shall identify “trigger events” or criteria that raise awareness of questionable conditions of viewing of confidential information. The “events” may be applied to the entire HealthTensor Platform or may be specific to a Customer, partner, or business associate.
 9. In addition to trigger events, HealthTensor utilizes OSSEC log correlation functionality to proactively identify and enable alerts based on log data.
-10. Logs are reviewed weekly by Security Officer. 
+10. Logs are reviewed biweekly by Security Officer. 
 11. HealthTensor’s Security Officer and Privacy Officer are authorized to select and use auditing tools that are designed to detect network vulnerabilities and intrusions. Such tools are explicitly prohibited by others, including Customers and Partners, without the explicit authorization of the Security Officer. These tools may include, but are not limited to:
 	* Scanning tools and devices;
 	* Password cracking utilities;
@@ -66,7 +65,6 @@ It is the policy of HealthTensor to safeguard the confidentiality, integrity, an
 	* Testing may be carried out internally or provided through an external third-party vendor. Whenever possible, a third party auditing vendor should not be providing the organization IT oversight services (e.g., vendors providing IT services should not be auditing their own services - separation of duties).
 	* Testing shall be done on a routine basis, currently monthly.
 14. Software patches and updates will be applied to all systems in a timely manner. In the case of routine updates, they will be applied after thorough testing. In the case of updates to correct known vulnerabilities, priority will be given to testing to speed the time to production. Critical security patches are applied within 30 days from testing and all security patches are applied within 90 days after testing.
-	* In the case of PaaS Customers, updates to Application and Database versions are the responsibility of Customers, though HealthTensor will, at it's own discretion, notify and recommend updates to customer systems.
 
 ## Audit Requests
 
@@ -99,12 +97,12 @@ It is the policy of HealthTensor to safeguard the confidentiality, integrity, an
 4. Audit logs shall be protected from unauthorized access or modification, so the information they contain will be made available only if needed to evaluate a security incident or for routine audit activities as outlined in this policy.
 5. All audit logs are encrypted in transit and at rest to control access to the content of the logs. 
 6. Audit logs shall be stored on a separate system to minimize the impact auditing may have on the privacy system and to prevent access to audit trails by those with system administrator privileges. This is done to apply the security principle of “separation of duties” to protect audit trails from hackers.
-7. For PaaS Customers choosing to use HealthTensor logging services, log data will be separated from the log data of other HealthTensor Customers.
+7. For SaaS Customers choosing to use HealthTensor logging services, log data will be separated from the log data of other HealthTensor Customers.
 
 ## Workforce Training, Education, Awareness and Responsibilities
 
 1. HealthTensor workforce members are provided training, education, and awareness on safeguarding the privacy and security of business and ePHI. HealthTensor’s commitment to auditing access and activity of the information applications, systems, and networks is communicated through new employee orientation, ongoing training opportunities and events, and applicable policies. HealthTensor workforce members are made aware of responsibilities with regard to privacy and security of information as well as applicable sanctions/corrective disciplinary actions should the auditing process detect a workforce member’s failure to comply with organizational policies.
-2. HealthTensor Customers are provided with necessary information to understand HealthTensor auditing capabilities, and PaaS Customers can choose the level of logging and auditing that HealthTensor will implement on their behalf.
+2. HealthTensor Customers are provided with necessary information to understand HealthTensor auditing capabilities, and SaaS Customers can choose the level of logging and auditing that HealthTensor will implement on their behalf.
 
 ## External Audits of Information Access and Activity
 

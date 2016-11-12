@@ -48,7 +48,7 @@ Production Systems that create, receive, store, or transmit customer ePHI (herea
 * Implement and/or review controls designed to protect Production Data from improper alteration or destruction.
 * Ensure that Confidential data is stored in a manner that supports user access logs and automated monitoring for potential security incidents.
 * Ensure HealthTensor customer Production Data is segmented and only accessible to customer authorized to access data.
-* All Production Data at rest is stored on encrypted volumes. Encryption at rest is ensured through the use of automated deployment scripts referenced in the HealthTensor Configuration Management Policy.
+* All ePHI data at rest is stored on encrypted volumes.
 * Volume encryption keys and machines that generate volume encryption keys are protected from unauthorized access. Volume encryption key material is protected with access controls such that the key material is only accessible by privileged accounts.
 * Encrypted volumes use AES encryption with a minimum of 256-bit keys, or keys and ciphers of equivalent or higher cryptographic strength.
 

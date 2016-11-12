@@ -2,7 +2,7 @@
 
 HealthTensor recognizes that media containing ePHI may be reused when appropriate steps are taken to ensure that all stored ePHI has been effectively rendered inaccessible. Destruction/disposal of ePHI shall be carried out in accordance with federal and state law. The schedule for destruction/disposal shall be suspended for ePHI involved in any open investigation, audit, or litigation.
 
-HealthTensor utilizes dedicated hardware from Subcontractors. ePHI is only stored on SSD volumes in our hosted environment. All SSD volumes utilized by HealthTensor and HealthTensor Customers are encrypted. HealthTensor does not use, own, or manage any mobile devices, SD cards, or tapes that have access to ePHI.
+HealthTensor utilizes dedicated hardware from Subcontractors. ePHI is only stored on volumes in our hosted environment. All volumes containing ePHI are encrypted. HealthTensor does not use, own, or manage any mobile devices, SD cards, or tapes that have access to ePHI.
 
 ## Applicable Standards from the HITRUST Common Security Framework
 
@@ -22,6 +22,6 @@ HealthTensor utilizes dedicated hardware from Subcontractors. ePHI is only store
 6. All HealthTensor Subcontractors provide that, upon termination of the contract, they will return or destroy/dispose of all patient health information. In cases where the return or destruction/disposal is not feasible, the contract limits the use and disclosure of the information to the purposes that prevent its return or destruction/disposal.
 7. Any media containing ePHI is disposed using a method that ensures the ePHI could not be readily recovered or reconstructed.
 8. The methods of destruction, disposal, and reuse are reassessed periodically, based on current technology, accepted practices, and availability of timely and cost-effective destruction, disposal, and reuse technologies and services.
-9. In the cases of a HealthTensor Customer terminating a contract with HealthTensor and not longer utilize HealthTensor Services, the following actions will be taken depending on the HealthTensor Services in use. In all cases it is solely the responsibility of the HealthTensor Customer to maintain the safeguards required of HIPAA once the data is transmitted out of HealthTensor Systems.
+9. In the cases of a HealthTensor Customer terminating a contract with HealthTensor and no longer utilize HealthTensor Services, the following actions will be taken depending on the HealthTensor Services in use. In all cases it is solely the responsibility of the HealthTensor Customer to maintain the safeguards required of HIPAA once the data is transmitted out of HealthTensor Systems.
 	* In the case of BaaS Customer termination, HealthTensor will provide the customer with the ability to export data in commonly used format, currently CSV, for 30 days from the time of termination.
-	* In the case of PaaS Customer termination, HealthTensor will provide the customer with 30 days from the date of termination to export data.
+	* In the case of SaaS Customer termination, HealthTensor will provide the customer with 30 days from the date of termination to export data.

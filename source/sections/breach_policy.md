@@ -6,7 +6,7 @@ The Federal Trade Commission (FTC) has published breach notification rules for v
 
 The American Recovery and Reinvestment Act of 2009 (ARRA) was signed into law on February 17, 2009. Title XIII of ARRA is the Health Information Technology for Economic and Clinical Health Act (HITECH). HITECH significantly impacts the Health Insurance Portability and Accountability (HIPAA) Privacy and Security Rules.  While HIPAA did not require notification when patient protected health information (PHI) was inappropriately disclosed, covered entities and business associates may have chosen to include notification as part of the mitigation process. HITECH does require notification of certain breaches of unsecured PHI to the following: individuals, Department of Health and Human Services (HHS), and the media. The effective implementation for this provision is September 23, 2009 (pending publication HHS regulations).
 
-In the case of a breach, HealthTensor shall notify all affected Customers. It is the responsibility of the Customers to notify affected individuals.
+In the case of a breach, HealthTensor shall notify all affected Customers and partners. It is the responsibility of the Customers to notify affected individuals.
 
 ## Applicable Standards from the HITRUST Common Security Framework
 
@@ -29,7 +29,7 @@ In the case of a breach, HealthTensor shall notify all affected Customers. It is
 	* The type and amount of ePHI involved;
 	* The cause of the breach, and the entity responsible for the breach, either Customer, HealthTensor, or Partner.
 	* The potential for significant risk of financial, reputational, or other harm. 
-4. Timeliness of Notification: Upon discovery of a breach, notice shall be made to the affected HealthTensor Customers no later than 4 hours after the discovery of the breach. It is the responsibility of the organization to demonstrate that all notifications were made as required, including evidence demonstrating the necessity of delay. 
+4. Timeliness of Notification: Upon discovery of a breach, notice shall be made to the affected HealthTensor partners no later than 5 days after the discovery of the breach. It is the responsibility of the organization to demonstrate that all notifications were made as required, including evidence demonstrating the necessity of delay. 
 5. Delay of Notification Authorized for Law Enforcement Purposes:  If a law enforcement official states to the organization that a notification, notice, or posting would impede a criminal investigation or cause damage to national security, the organization shall:
 	* If the statement is in writing and specifies the time for which a delay is required, delay such notification, notice, or posting of the timer period specified by the official; or
 	* If the statement is made orally, document the statement, including the identify of the official making the statement, and delay the notification, notice, or posting temporarily and no longer than 30 days from the date of the oral statement, unless a written statement as described above is submitted during that time. 
@@ -50,7 +50,7 @@ In the case of a breach, HealthTensor shall notify all affected Customers. It is
 12. Sanctions: The organization shall have in place and apply appropriate sanctions against members of its workforce, Customers, and Partners who fail to comply with privacy policies and procedures.
 13. Retaliation/Waiver: HealthTensor may not intimidate, threaten, coerce, discriminate against, or take other retaliatory action against any individual for the exercise by the individual of any privacy right. The organization may not require individuals to waive their privacy rights under as a condition of the provision of treatment, payment, enrollment in a health plan, or eligibility for benefits.
 
-## HealthTensor PaaS Customer Responsibilities
+## HealthTensor SaaS Customer Responsibilities
 
 1. The HealthTensor Customer that accesses, maintains, retains, modifies, records, stores, destroys, or otherwise holds, uses, or discloses unsecured ePHI shall, without unreasonable delay and in no case later than 60 calendar days after discovery of a breach, notify HealthTensor of such breach. The Customer shall provide HealthTensor with the following information:
 	* A description of what happened, including the date of the breach, the date of the discovery of the breach, and the number of records and Customers affected, if known.

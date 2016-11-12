@@ -35,6 +35,8 @@ HealthTensor defined two categories of systems from a disaster recovery perspect
 1. *Critical Systems*. These systems host application servers and database servers or are required for functioning of systems that host application servers and database servers. These systems, if unavailable, affect the integrity of data and must be restored, or have a process begun to restore them, immediately upon becoming unavailable.
 2. *Non-critical Systems*. These are all systems not considered critical by definition above. These systems, while they may affect the performance and overall security of critical systems, do not prevent Critical systems from functioning and being accessed appropriately. These systems are restored at a lower priority than critical systems.
 
+As of November 11th HealthTensor has no Critical Systems deployed.
+
 ## Applicable Standards from the HITRUST Common Security Framework
 
 * 12.c - Developing and Implementing Continuity Plans Including Information Security
