@@ -10,16 +10,16 @@ SaaS Customers utilize hosted software and infrastructure from HealthTensor to s
 
 ## HealthTensor Organizational Concepts
 
-The physical infrastructure environment is hosted on premise. GitHub hosts non-restricted configuration files and scripts, while [Amazon Web Services](https://aws.amazon.com/) (AWS) stores backups. The network components and supporting network infrastructure are secured on premise. The HealthTensor environment consists of nginx web servers, PostgreSQL database servers, Linux Ubuntu monitoring servers, configuration management scripts, OSSEC IDS services, Docker containers, and developer tools servers running on Linux Ubuntu.
+The physical infrastructure environment is hosted by [Amazon Web Services](https://aws.amazon.com/) (AWS). GitHub hosts unrestricted configuration files and scripts, while AWS stores backups. The network components and supporting network infrastructure are contained within AWS and managed by Amazon. The HealthTensor environment consists of software firewalls, nginx web servers, PostgreSQL database servers, Linux Ubuntu monitoring servers, configuration management scripts, OSSEC IDS services, Docker containers, and developer tools servers running on Linux Ubuntu and FreeBSD.
 
-Within the HealthTensor Software infrastructure all data transmission is encrypted and all filesystems with ePHI are encrypted so data at rest is also encrypted; this applies to all servers - those hosting Docker containers, databases, APIs, log servers, etc.
+Within the HealthTensor Software infrastructure all data transmission is encrypted and all filesystems with ePHI are encrypted so data at rest is also encrypted. Servers which do not host ePHI are not necessarily encrypted.
 
 In the case of SaaS Customers, it is the responsibility of the Customer to restrict, secure, and assure the privacy of all ePHI data at the Application Level, as this is not under the control or purview of HealthTensor.
 
-Our data and network segmentation is provided by hardware and software firewalls which limit access to critical services. freebsd's `pf` is configured to restrict access to only justified ports and protocols. HealthTensor has implemented strict logical access controls so that only authorized personnel are given access to ePHI.
+Our data and network segmentation is provided by hardware and software firewalls which limit access to critical services. FreeBSD's `pf` and AWS security groups are configured to restrict access to only justified ports and protocols. HealthTensor has implemented strict logical access controls so that only authorized personnel are given access to ePHI.
 
 The router is externally facing and accessible via the Internet. The database servers, where the ePHI resides, are located on the internal HealthTensor network and can only be accessed directly over an SSH connection. The access to the internal database is restricted to a limited number of personnel and strictly controlled to only those personnel with a business justified reason. Remote access to the internal servers is not accessible except through the internal router.
 
 ## Version Control
 
-Policies were last updated November 10th, 2016.
+Policies were last updated March 6th, 2017.
