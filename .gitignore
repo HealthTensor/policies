@@ -38,6 +38,7 @@ Temporary Items
 .dat*
 .repl_history
 build/
+policies.tar.gz
 
 ## Documentation cache and generated files:
 /.yardoc/

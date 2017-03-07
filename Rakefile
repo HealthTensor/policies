@@ -4,6 +4,11 @@ task :build do
   puts status ? "OK" : "FAILED"
 end
 
+desc "Build and tar.gz the static site"
+task :bundle => :build do
+  system("tar czf policies.tar.gz build/ --transform='s/^build/policies/'")
+end
+
 desc "Run the middleman server"
 task :run do
   system("middleman server -p 2113")
