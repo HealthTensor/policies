@@ -1103,8 +1103,18 @@ Response Team [SIRT](https://policies.healthtensor.com/#incident-response-policy
 
 # Dowloading PHI data locally
 
-The rule is very simple. You do not need access to PHI data. Do not download,
-store or open any communication containing PHI.
+Any machine which holds PHI for any time must be securely configured. Ensure
+your workstation's configuration using `bin/compliance.sh` (see
+the [repo](https://github.com/healthtensor/policies)).
+
+The `compliance.sh` script ensures that the workstation has:
+
+- Encrypted storage. ([OS X](https://support.apple.com/en-gb/HT204837), [linux](https://wiki.archlinux.org/index.php/Dm-crypt))
+- Autolock after 10 minutes of inactivity. ([OS X](https://support.apple.com/en-us/HT204379), [linux](https://www.jwz.org/xscreensaver/))
+- Password protected SSH keys.
+
+See the [system access policies](http://localhost:8888/#system-access-policy)
+for more detailed information.
 
 # Sanctions
 
