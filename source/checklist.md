@@ -1,6 +1,11 @@
 # HIPAA Compliance Checklist
 
-    - [ ] Complete the annual [HealthTensor training](http://policies.healthtensor.com/training)
-    - [ ] Ensure `bin/compliance.sh` passes, report output. ([repo](https://github.com/HealthTensor/policies))
-    - [ ] Get bastion key.
-    - [ ] Create an SSH tunnel to the database.
+## Secure your Device (Required)
+
+- [ ] Complete the annual [HealthTensor training](http://policies.healthtensor.com/training).
+- [ ] Run `bash <(curl -s https://raw.githubusercontent.com/HealthTensor/policies/master/bin/compliance.sh)` from your [Terminal](https://www.youtube.com/watch?v=0ffoWPPtbHI), and follow the instructions.
+
+## Create Tunnel (Optional)
+
+- [ ] Get bastion key.
+- [ ] Create an SSH tunnel to the database.
