@@ -4,4 +4,7 @@ HealthTensor utilizes a suite of approved software tools for internal use by wor
 
 ## List of Approved Tools
 
-* **Google Apps**. Google Apps is used for email and document collaboration.
+* **Google Apps** (BAA) Google Apps provides email and document collaboration.
+* **AWS** (BAA) AWS provides cloud hosting.
+* **Phabricator** Phabricator provides source code hosting and collaboration. No PHI is stored in Phabricator.
+* **Pluot** Pluot provides for secure video conferencing.
