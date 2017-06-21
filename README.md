@@ -1,10 +1,10 @@
 # HealthTensor HIPAA Compliance Policies
 
-These policies are forked from Catalyze, see below.
+These policies are forked from Datica, see below.
 
 ## Who is behind this?
 
-[Catalyze.io](htts://catalyze.io), healthcare's trusted HIPAA-compliant platform.
+[Datica](htts://datica.com), healthcare's trusted HIPAA-compliant platform.
 
 We help companies who handle PHI, both business associates and covered entities, maintain compliance with our Platform as a Service ([Stratum](https://catalyze.io/stratum)) and Managed Data Integration Services ([Redpoint](https://catalyze.io/redpoint)). 
 
@@ -39,4 +39,3 @@ Each policy is included as it's own markdown file in case you want to cherry pic
 * [Approved Tools Policy](source/sections/approved_tools_policy.md)
 * [3rd Party Policy](source/sections/3rd_party_policy.md)
 * [Key Definitions](source/sections/key_definitions.md)
-* [HealthTensor HIPAA Business Associate Agreement (“BAA”)](source/sections/catalyze_hipaa_business_associate_agreement.md)

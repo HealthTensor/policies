@@ -15,22 +15,24 @@ function fail {
     FAILED=true
 }
 
-if [[ "$(grep "Proc-Type: 4,ENCRYPTED" ${SSH_KEY})" ]]; then
-    success "SSH key is encrypted (${SSH_KEY})."
-else
-    fail "SSH key NOT encrypted: ${SSH_KEY}!!!"
-fi
-ssh_key_size="$(ssh-keygen -l -f "${SSH_KEY}" | cut -f1 -d' ')"
-if [[ "$ssh_key_size" -ge 2048 ]]; then
-    success "SSH key size 2048 bits or greater (${ssh_key_size})."
-else
-    fail "SSH key size less than 2048 bits: ${ssh_key_size}!!!"
-fi
-ssh_key_type="$(ssh-keygen -l -f "${SSH_KEY}" | cut -f4 -d' ')"
-if [[ "$ssh_key_type" == "(RSA)" ]]; then
-    success "SSH key is RSA."
-else
-    fail "SSH key isn't RSA: ${ssh_key_type}!!!"
+if [[ "$1" == --ssh-keys ]]; then
+    if [[ "$(grep "Proc-Type: 4,ENCRYPTED" ${SSH_KEY})" ]]; then
+        success "SSH key is encrypted (${SSH_KEY})."
+    else
+        fail "SSH key NOT encrypted: ${SSH_KEY}!!!"
+    fi
+    ssh_key_size="$(ssh-keygen -l -f "${SSH_KEY}" | cut -f1 -d' ')"
+    if [[ "$ssh_key_size" -ge 2048 ]]; then
+        success "SSH key size 2048 bits or greater (${ssh_key_size})."
+    else
+        fail "SSH key size less than 2048 bits: ${ssh_key_size}!!!"
+    fi
+    ssh_key_type="$(ssh-keygen -l -f "${SSH_KEY}" | cut -f4 -d' ')"
+    if [[ "$ssh_key_type" == "(RSA)" ]]; then
+        success "SSH key is RSA."
+    else
+        fail "SSH key isn't RSA: ${ssh_key_type}!!!"
+    fi
 fi
 
 case "$(uname)" in
@@ -53,7 +55,7 @@ case "$(uname)" in
         fi
         ;;
     *)
-        # fail "Unrecognized OS: $(uname)"
+        fail "Unrecognized OS: $(uname)"
         ;;
 esac
 
@@ -66,5 +68,5 @@ else
     echo "Public SSH Key (${SSH_KEY}.pub):"
     echo "$(ssh-keygen -l -f "${SSH_KEY}.pub")"
     cat "${SSH_KEY}.pub"
-    echo "Success! Send this output to scalar@healthtensor.com"
+    echo "Success! Copy and paste this output into an email to scalar@healthtensor.com"
 fi
